@@ -1,11 +1,19 @@
 
 
 class Testing{
-
-  Testing();
-
   int d= 0;
   int e = 0;
+
+
+  // constructor
+  Testing(int k){
+    print("nilai k "+ k.toString());
+    this.d = k;
+     print("nilai d"+ d.toString());
+  }
+
+  // contructor
+  Testing.fromTest();
 
   // fungsi gak ada kembalian nilai
   void penjumlahan(){
@@ -32,7 +40,7 @@ class Testing{
   }
 
 
-  //fungsi kembalian nilai
+  //fungsi kembalian nilai int
   int perkalian(){
     int a = 2;
     int b = 4;
@@ -43,4 +51,11 @@ class Testing{
 
     return f;
   }
+  // fungsi kembalian String
+  String getnama(){
+      String nama = "Restu";
+      return nama;
+  }
+
+
 }
