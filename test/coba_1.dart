@@ -12,6 +12,16 @@
 }
    */
 
-void main(){
+void coba1(){
   var name = "ini joni";
+  penjumlahan();
+}
+
+void penjumlahan (){
+  int a = 10;
+  int b = 20;
+
+  int c = a +b;
+
+  print("jumlah ="+c.toString());
 }

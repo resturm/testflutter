@@ -1,3 +1,4 @@
+import 'package:coba_1/testing.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -5,11 +6,22 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+
   const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+
+    // initialitate class
+    Testing test = new Testing();
+
+    // panggil fungsi penjumlahan dari fungsi testing
+    test.penjumlahan();
+
+    // panggil fungsi penguraagn dari fungsi testing
+    test.pengurangan();
+
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -49,6 +61,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+
+  Testing test = new Testing();
 
   void _incrementCounter() {
     setState(() {
@@ -99,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'You have pushed the button this many times:',
             ),
             Text(
-              '$_counter',
+              "ini hasil kali "+test.perkalian().toString(),
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
